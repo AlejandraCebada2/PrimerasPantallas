@@ -6,6 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity4">
 
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout"
+      android:layout_width="407dp"
+      android:layout_height="115dp"
+      android:background="@drawable/pick_background"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="155dp">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="111dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_perfil1" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="176dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Jorge Gonzáles"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="FrontEnd (JavaScript, PHP, HTML, CSS)"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="244dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="144dp" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
   <SearchView
       android:id="@+id/searchView"
       android:layout_width="379dp"
@@ -17,5 +74,255 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+  <Spinner
+      android:id="@+id/spinner4"
+      android:layout_width="68dp"
+      android:layout_height="28dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.953"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="80dp" />
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="41dp"
+      android:layout_height="26dp"
+      android:text="Filtrar"
+      android:textAlignment="center"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toStartOf="@+id/spinner4"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="82dp" />
+
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:fontFamily="sans-serif-smallcaps"
+      android:text="Resultados Encontrados"
+      android:textColor="#202022"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="123dp" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="407dp"
+      android:layout_height="115dp"
+      android:background="@drawable/pick_background"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="155dp">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="111dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_perfil1" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="176dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Jorge Gonzáles"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="FrontEnd (JavaScript, PHP, HTML, CSS)"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="244dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="144dp" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout2"
+      android:layout_width="407dp"
+      android:layout_height="115dp"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/pick2_background"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="HTML, JavaScript, CSS"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="176dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Patricia Félix"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="111dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/ic_per2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="244dp"
+        android:layout_height="42dp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="66dp" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout3"
+      android:layout_width="407dp"
+      android:layout_height="115dp"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/pick_back3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_width="244dp"
+        android:layout_height="42dp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="164dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="PHP, CSS, JQuery"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="176dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Claudia Ramírez"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="111dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/ic_perffil3"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="1dp" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="407dp"
+      android:layout_height="115dp"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/pick_back4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+    <RatingBar
+        android:id="@+id/ratingBar4"
+        android:layout_width="244dp"
+        android:layout_height="42dp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="FrontEnd ( HTML, CSS)"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="176dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Horacio Pérez"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="111dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/ic_perfill4"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="2dp" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
