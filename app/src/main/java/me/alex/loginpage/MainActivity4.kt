@@ -43,22 +43,18 @@ class MainActivity4 : AppCompatActivity() {
         imageView20 = findViewById(R.id.imageView20)
         textView17 = findViewById(R.id.textView17)
         textView18 = findViewById(R.id.textView18)
-        ratingBar = findViewById(R.id.ratingBar)
 
         imageView21 = findViewById(R.id.imageView21)
         textView20 = findViewById(R.id.textView20)
         textView19 = findViewById(R.id.textView19)
-        ratingBar2 = findViewById(R.id.ratingBar2)
 
         imageView22 = findViewById(R.id.imageView22)
         textView22 = findViewById(R.id.textView22)
         textView21 = findViewById(R.id.textView21)
-        ratingBar3 = findViewById(R.id.ratingBar3)
 
         imageView24 = findViewById(R.id.imageView24)
         textView24 = findViewById(R.id.textView24)
         textView23 = findViewById(R.id.textView23)
-        ratingBar4 = findViewById(R.id.ratingBar4)
 
         searchView = findViewById(R.id.searchView)
         spinner4 = findViewById(R.id.spinner4)
