@@ -12,33 +12,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginPage"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivityPaginaPrincipal"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity5"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivityRecuperarPassword"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity4"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name="MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="InicioAlumnosActivity"
+            android:exported="false" />
+        <activity
+            android:name="MainActivityRecuperarPassword"
+            android:exported="false" />
+        <activity
+            android:name="RegistroAlumnosActivity"
+            android:exported="false" />
+        <activity
+            android:name="MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name="RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name="MainActivityPaginaPrincipal"
+            android:exported="false" />
+
+        <activity
+            android:name="RegistroMaestrosActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
