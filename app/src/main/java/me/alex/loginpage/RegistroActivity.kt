@@ -19,13 +19,13 @@ class RegistroActivity : AppCompatActivity() {
         val imageView5 = findViewById<ImageView>(R.id.imageView5)
 
         button6.setOnClickListener {
-                val intent = Intent(this, RegistroAlumnosActivity::class.java)
+                val intent = Intent(this, RegistroMaestrosActivity::class.java)
                 startActivity(intent)
         }
 
 
         button7.setOnClickListener {
-            val intent = Intent(this, RegistroMaestrosActivity::class.java)
+            val intent = Intent(this, RegistroAlumnosActivity::class.java)
             startActivity(intent)
         }
     }

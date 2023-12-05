@@ -1,248 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="MainActivity4">
+    tools:context=".MainActivity4">
 
-  <!-- Primer ConstraintLayout -->
-  <androidx.constraintlayout.widget.ConstraintLayout
-      android:id="@+id/constraintLayout"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      android:background="@drawable/pick_background"
-      app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-      app:layout_constraintEnd_toEndOf="parent"
+  <!-- Primer conjunto de vistas -->
+  <ImageView
+      android:id="@+id/imageView20"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent">
+      app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="111dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_perfil1" />
+  <TextView
+      android:id="@+id/textView17"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/imageView20"
+      app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="176dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="serif"
-        android:text="Jorge Gonzáles"
-        android:textColor="#000000"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.639"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+      android:id="@+id/textView18"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView17"
+      app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="FrontEnd (JavaScript, PHP, HTML, CSS)"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
+  <androidx.appcompat.widget.AppCompatRatingBar
+      android:id="@+id/ratingBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView18"
+      app:layout_constraintTop_toTopOf="parent" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="244dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="144dp" />
-  </androidx.constraintlayout.widget.ConstraintLayout>
-
-  <!-- Segundo ConstraintLayout -->
-  <androidx.constraintlayout.widget.ConstraintLayout
-      android:id="@+id/constraintLayout2"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      android:background="@drawable/pick_background"
-      app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
-      app:layout_constraintEnd_toEndOf="parent"
+  <!-- Conjunto de vistas 2 -->
+  <ImageView
+      android:id="@+id/imageView21"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+      app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+      tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="111dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_perfil1" />
+  <TextView
+      android:id="@+id/textView20"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/imageView21"
+      app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="176dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="serif"
-        android:text="Jorge Gonzáles"
-        android:textColor="#000000"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.639"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+      android:id="@+id/textView19"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView20"
+      app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="FrontEnd (JavaScript, PHP, HTML, CSS)"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
+  <androidx.appcompat.widget.AppCompatRatingBar
+      android:id="@+id/ratingBar2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView19"
+      app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
-    <RatingBar
-        android:id="@+id/ratingBar2"
-        android:layout_width="244dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="144dp" />
-  </androidx.constraintlayout.widget.ConstraintLayout>
-
-  <!-- Tercer ConstraintLayout -->
-  <androidx.constraintlayout.widget.ConstraintLayout
-      android:id="@+id/constraintLayout3"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      android:background="@drawable/pick_background"
-      app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
-      app:layout_constraintEnd_toEndOf="parent"
+  <!-- Conjunto de vistas 3 -->
+  <ImageView
+      android:id="@+id/imageView22"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+      app:layout_constraintTop_toBottomOf="@+id/ratingBar2"
+      tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="111dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_perfil1" />
+  <TextView
+      android:id="@+id/textView22"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/imageView22"
+      app:layout_constraintTop_toTopOf="@+id/imageView22" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="176dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="serif"
-        android:text="Jorge Gonzáles"
-        android:textColor="#000000"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.639"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+      android:id="@+id/textView21"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView22"
+      app:layout_constraintTop_toTopOf="@+id/imageView22" />
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="FrontEnd (JavaScript, PHP, HTML, CSS)"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
+  <androidx.appcompat.widget.AppCompatRatingBar
+      android:id="@+id/ratingBar3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView21"
+      app:layout_constraintTop_toTopOf="@+id/imageView22" />
 
-    <RatingBar
-        android:id="@+id/ratingBar3"
-        android:layout_width="244dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="144dp" />
-  </androidx.constraintlayout.widget.ConstraintLayout>
-
-  <!-- Cuarto ConstraintLayout -->
-  <androidx.constraintlayout.widget.ConstraintLayout
-      android:id="@+id/constraintLayout4"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      android:background="@drawable/pick_background"
-      app:layout_constraintBottom_toTopOf="@+id/searchView"
-      app:layout_constraintEnd_toEndOf="parent"
+  <!-- Conjunto de vistas 4 -->
+  <ImageView
+      android:id="@+id/imageView24"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+      app:layout_constraintTop_toBottomOf="@+id/ratingBar3"
+      tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="111dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_perfil1" />
+  <TextView
+      android:id="@+id/textView24"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/imageView24"
+      app:layout_constraintTop_toTopOf="@+id/imageView24" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="176dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="serif"
-        android:text="Jorge Gonzáles"
-        android:textColor="#000000"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.639"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+      android:id="@+id/textView23"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView24"
+      app:layout_constraintTop_toTopOf="@+id/imageView24" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="FrontEnd (JavaScript, PHP, HTML, CSS)"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
+  <androidx.appcompat.widget.AppCompatRatingBar
+      android:id="@+id/ratingBar4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@+id/textView23"
+      app:layout_constraintTop_toTopOf="@+id/imageView24" />
 
-    <RatingBar
-        android:id="@+id/ratingBar4"
-        android:layout_width="244dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="144dp" />
-  </androidx.constraintlayout.widget.ConstraintLayout>
-
+  <!-- Último conjunto de vistas -->
   <SearchView
       android:id="@+id/searchView"
       android:layout_width="0dp"
@@ -251,29 +134,28 @@
       android:layout_marginTop="16dp"
       android:layout_marginEnd="16dp"
       android:background="#99E4DDDD"
-      app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <Spinner
       android:id="@+id/spinner4"
-      android:layout_width="68dp"
-      android:layout_height="28dp"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.953"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/searchView" />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/textView11"
-      android:layout_width="41dp"
-      android:layout_height="26dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       android:text="Filtrar"
       android:textAlignment="center"
       android:textStyle="bold"
-      app:layout_constraintTop_toBottomOf="@+id/searchView"
       app:layout_constraintEnd_toStartOf="@+id/spinner4"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/textView12"
@@ -286,5 +168,14 @@
       android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
