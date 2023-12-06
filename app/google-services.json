@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "544879394194",
+    "firebase_url": "https://tofindteacher-a85d3-default-rtdb.firebaseio.com",
+    "project_id": "tofindteacher-a85d3",
+    "storage_bucket": "tofindteacher-a85d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544879394194:android:ce1a86b35ea55a7d06954b",
+        "android_client_info": {
+          "package_name": "me.alex.loginpage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU6cl-PlLuCZLj3uMI6W5N1LROAy_aF20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

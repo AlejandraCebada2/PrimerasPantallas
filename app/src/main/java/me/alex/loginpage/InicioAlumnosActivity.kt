@@ -34,7 +34,7 @@ class InicioAlumnosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_alumnos)
 
-        textView = findViewById(R.id.textView)
+        textView = findViewById(R.id.loginTextView)
         imageView2 = findViewById(R.id.imageView2)
         textViewGreeting = findViewById(R.id.textViewGreeting)
         searchView = findViewById(R.id.searchView)

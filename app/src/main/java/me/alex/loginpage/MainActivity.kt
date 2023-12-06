@@ -4,59 +4,70 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var emailEditText: EditText
-    private lateinit var passwordEditText: EditText
-    private lateinit var loginButton: Button
-    private lateinit var registerButton: Button
-    private lateinit var forgotPasswordTextView: TextView
+    private lateinit var CorreoElectronico: EditText
+    private lateinit var Contrasenia: EditText
+    private lateinit var IniciaSe: Button
+    private lateinit var Registrarse: Button
+    private lateinit var noPass: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        emailEditText = findViewById(R.id.editTextText2)
-        passwordEditText = findViewById(R.id.editText2)
-        loginButton = findViewById(R.id.IniciaSe)
-        registerButton = findViewById(R.id.Registrarse)
-        forgotPasswordTextView = findViewById(R.id.noPass)
+        CorreoElectronico = findViewById(R.id.CorreoElectronico)
+        Contrasenia = findViewById(R.id.Contrasenia)
 
-        loginButton.setOnClickListener {
-            val email = emailEditText.text.toString()
-            val password = passwordEditText.text.toString()
+        IniciaSe = findViewById(R.id.IniciaSe)
+        Registrarse = findViewById(R.id.Registrarse)
+        noPass = findViewById(R.id.noPass)
 
-            if (email.isNotEmpty() && password.isNotEmpty()) {
-                val intent = Intent(this, InicioAlumnosActivity::class.java)
-                startActivity(intent)
+        IniciaSe.setOnClickListener {
+            if (CorreoElectronico.text.isNotEmpty() && Contrasenia.text.isNotEmpty()) {
+                FirebaseAuth.getInstance().signInWithEmailAndPassword(CorreoElectronico.text.toString(),
+                    Contrasenia.text.toString()).addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        iniciarSesion (it.result?.user?.email ?: "")
+                    } else {
+                        error()
+                    }
+                }
             } else {
-                showToast("Por favor, completa todos los campos, son obligatorios.")
+                error()
             }
         }
 
-        registerButton.setOnClickListener {
-            val email = emailEditText.text.toString()
-            val password = passwordEditText.text.toString()
-
-            if (email.isNotEmpty() && password.isNotEmpty()) {
-                val intent = Intent(this, RegistroActivity::class.java)
-                startActivity(intent)
-            } else {
-                showToast("Por favor, completa todos los campos.")
-            }
+        Registrarse.setOnClickListener {
+            val intent = Intent(this, RegistroActivity::class.java)
+            startActivity(intent)
         }
 
-        forgotPasswordTextView.setOnClickListener {
+        noPass.setOnClickListener {
             val intent = Intent(this, MainActivityRecuperarPassword::class.java)
             startActivity(intent)
         }
     }
 
-    private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    private fun iniciarSesion(email: String){
+        val intent = Intent (this, InicioAlumnosActivity::class.java).apply {
+            putExtra("email", email)
+        }
+        startActivity(intent)
     }
+
+    private fun error() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Usuario o contraseña incorrecto")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
 }
